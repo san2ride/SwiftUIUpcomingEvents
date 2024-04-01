@@ -13,6 +13,9 @@
 		F7001F2A2B9031D400A71D84 /* UpcomingEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7001F292B9031D400A71D84 /* UpcomingEventsView.swift */; };
 		F7905A6B2BBB6BF6004285A4 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7905A6A2BBB6BF6004285A4 /* EventService.swift */; };
 		F7905A702BBB7459004285A4 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7905A6F2BBB7458004285A4 /* CoreDataProvider.swift */; };
+		F7905A732BBB777A004285A4 /* UpcomingEventsModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F7905A712BBB777A004285A4 /* UpcomingEventsModel.xcdatamodeld */; };
+		F7905A752BBB78E7004285A4 /* MyEvents+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7905A742BBB78E7004285A4 /* MyEvents+CoreDataClass.swift */; };
+		F7905A772BBB7914004285A4 /* MyEvents+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7905A762BBB7914004285A4 /* MyEvents+CoreDataProperties.swift */; };
 		F7B075052B919635001EAA57 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = F7B075042B919635001EAA57 /* events.json */; };
 		F7B075082B919662001EAA57 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B075072B919662001EAA57 /* Event.swift */; };
 		F7B0750B2B919A1C001EAA57 /* EventClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0750A2B919A1C001EAA57 /* EventClient.swift */; };
@@ -26,6 +29,9 @@
 		F7001F292B9031D400A71D84 /* UpcomingEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsView.swift; sourceTree = "<group>"; };
 		F7905A6A2BBB6BF6004285A4 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
 		F7905A6F2BBB7458004285A4 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
+		F7905A722BBB777A004285A4 /* UpcomingEventsModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UpcomingEventsModel.xcdatamodel; sourceTree = "<group>"; };
+		F7905A742BBB78E7004285A4 /* MyEvents+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyEvents+CoreDataClass.swift"; sourceTree = "<group>"; };
+		F7905A762BBB7914004285A4 /* MyEvents+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MyEvents+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		F7B075042B919635001EAA57 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		F7B075072B919662001EAA57 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F7B0750A2B919A1C001EAA57 /* EventClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventClient.swift; sourceTree = "<group>"; };
@@ -70,6 +76,7 @@
 				F7001F1B2B9031AB00A71D84 /* UpcomingEventsMHApp.swift */,
 				F7001F1F2B9031AE00A71D84 /* Assets.xcassets */,
 				F7001F212B9031AE00A71D84 /* Preview Content */,
+				F7905A712BBB777A004285A4 /* UpcomingEventsModel.xcdatamodeld */,
 			);
 			path = "UpcomingEvents-MH";
 			sourceTree = "<group>";
@@ -110,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				F7B075072B919662001EAA57 /* Event.swift */,
+				F7905A742BBB78E7004285A4 /* MyEvents+CoreDataClass.swift */,
+				F7905A762BBB7914004285A4 /* MyEvents+CoreDataProperties.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,11 +202,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7905A772BBB7914004285A4 /* MyEvents+CoreDataProperties.swift in Sources */,
 				F7B075082B919662001EAA57 /* Event.swift in Sources */,
 				F7B0750B2B919A1C001EAA57 /* EventClient.swift in Sources */,
+				F7905A732BBB777A004285A4 /* UpcomingEventsModel.xcdatamodeld in Sources */,
 				F7001F2A2B9031D400A71D84 /* UpcomingEventsView.swift in Sources */,
 				F7905A6B2BBB6BF6004285A4 /* EventService.swift in Sources */,
 				F7001F1C2B9031AB00A71D84 /* UpcomingEventsMHApp.swift in Sources */,
+				F7905A752BBB78E7004285A4 /* MyEvents+CoreDataClass.swift in Sources */,
 				F7905A702BBB7459004285A4 /* CoreDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -404,6 +416,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		F7905A712BBB777A004285A4 /* UpcomingEventsModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				F7905A722BBB777A004285A4 /* UpcomingEventsModel.xcdatamodel */,
+			);
+			currentVersion = F7905A722BBB777A004285A4 /* UpcomingEventsModel.xcdatamodel */;
+			path = UpcomingEventsModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = F7001F102B9031AB00A71D84 /* Project object */;
 }
