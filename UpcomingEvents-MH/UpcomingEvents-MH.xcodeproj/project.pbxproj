@@ -11,6 +11,8 @@
 		F7001F202B9031AE00A71D84 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7001F1F2B9031AE00A71D84 /* Assets.xcassets */; };
 		F7001F232B9031AE00A71D84 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F7001F222B9031AE00A71D84 /* Preview Assets.xcassets */; };
 		F7001F2A2B9031D400A71D84 /* UpcomingEventsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7001F292B9031D400A71D84 /* UpcomingEventsView.swift */; };
+		F7905A6B2BBB6BF6004285A4 /* EventService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7905A6A2BBB6BF6004285A4 /* EventService.swift */; };
+		F7905A702BBB7459004285A4 /* CoreDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7905A6F2BBB7458004285A4 /* CoreDataProvider.swift */; };
 		F7B075052B919635001EAA57 /* events.json in Resources */ = {isa = PBXBuildFile; fileRef = F7B075042B919635001EAA57 /* events.json */; };
 		F7B075082B919662001EAA57 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B075072B919662001EAA57 /* Event.swift */; };
 		F7B0750B2B919A1C001EAA57 /* EventClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7B0750A2B919A1C001EAA57 /* EventClient.swift */; };
@@ -22,6 +24,8 @@
 		F7001F1F2B9031AE00A71D84 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F7001F222B9031AE00A71D84 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F7001F292B9031D400A71D84 /* UpcomingEventsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingEventsView.swift; sourceTree = "<group>"; };
+		F7905A6A2BBB6BF6004285A4 /* EventService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventService.swift; sourceTree = "<group>"; };
+		F7905A6F2BBB7458004285A4 /* CoreDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataProvider.swift; sourceTree = "<group>"; };
 		F7B075042B919635001EAA57 /* events.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = events.json; sourceTree = "<group>"; };
 		F7B075072B919662001EAA57 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
 		F7B0750A2B919A1C001EAA57 /* EventClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventClient.swift; sourceTree = "<group>"; };
@@ -59,9 +63,11 @@
 			children = (
 				F7B075092B9199FE001EAA57 /* Clients */,
 				F7B075062B919648001EAA57 /* Models */,
-				F7001F1B2B9031AB00A71D84 /* UpcomingEventsMHApp.swift */,
-				F7001F292B9031D400A71D84 /* UpcomingEventsView.swift */,
+				F7905A6E2BBB7437004285A4 /* Provider */,
+				F7905A6C2BBB6C3B004285A4 /* Service */,
+				F7905A6D2BBB6C64004285A4 /* Views */,
 				F7B075042B919635001EAA57 /* events.json */,
+				F7001F1B2B9031AB00A71D84 /* UpcomingEventsMHApp.swift */,
 				F7001F1F2B9031AE00A71D84 /* Assets.xcassets */,
 				F7001F212B9031AE00A71D84 /* Preview Content */,
 			);
@@ -74,6 +80,30 @@
 				F7001F222B9031AE00A71D84 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F7905A6C2BBB6C3B004285A4 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				F7905A6A2BBB6BF6004285A4 /* EventService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		F7905A6D2BBB6C64004285A4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F7001F292B9031D400A71D84 /* UpcomingEventsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F7905A6E2BBB7437004285A4 /* Provider */ = {
+			isa = PBXGroup;
+			children = (
+				F7905A6F2BBB7458004285A4 /* CoreDataProvider.swift */,
+			);
+			path = Provider;
 			sourceTree = "<group>";
 		};
 		F7B075062B919648001EAA57 /* Models */ = {
@@ -166,7 +196,9 @@
 				F7B075082B919662001EAA57 /* Event.swift in Sources */,
 				F7B0750B2B919A1C001EAA57 /* EventClient.swift in Sources */,
 				F7001F2A2B9031D400A71D84 /* UpcomingEventsView.swift in Sources */,
+				F7905A6B2BBB6BF6004285A4 /* EventService.swift in Sources */,
 				F7001F1C2B9031AB00A71D84 /* UpcomingEventsMHApp.swift in Sources */,
+				F7905A702BBB7459004285A4 /* CoreDataProvider.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
