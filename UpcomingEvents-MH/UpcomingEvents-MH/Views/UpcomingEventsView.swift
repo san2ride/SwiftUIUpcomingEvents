@@ -8,22 +8,26 @@
 import SwiftUI
 
 struct UpcomingEventsView: View {
+    
     @ObservedObject var eventClient = EventClient()
+    @State private var event: Event?
+    
     var body: some View {
         NavigationStack {
             VStack {
                 List(eventClient.events) { event in
-                    EventCellView(event: event)
+                    MyEventCellView(event: event)
                 }.navigationTitle("Events")
-                    .task {
-                        let overlappingEvents = EventService.findOverlappingEvents(eventClient.events)
-                        for overlap in overlappingEvents {
-                            print("Overlap between \(overlap.0.start)-\(overlap.0.end) and \(overlap.1.start)-\(overlap.1.end)")
-                        }
+                
+                .task {
+                    let overlappingEvents = EventService.findOverlappingEvents(eventClient.events)
+                    for overlap in overlappingEvents {
+                        Text("Overlap between \(overlap.0.start)-\(overlap.0.end) and \(overlap.1.start)-\(overlap.1.end)")
+                        print("Overlap between \(overlap.0.start)-\(overlap.0.end) and \(overlap.1.start)-\(overlap.1.end)")
                     }
-                HStack {
-                    
                 }
+                Divider()
+                
             }
         }
     }
@@ -31,17 +35,4 @@ struct UpcomingEventsView: View {
 
 #Preview {
     UpcomingEventsView()
-}
-
-struct EventCellView: View {
-    let event: Event
-    
-    var body: some View {
-        VStack(alignment: .leading) {
-            Text(event.title)
-                .font(.headline)
-            Text(event.start)
-            Text(event.end)
-        }
-    }
 }

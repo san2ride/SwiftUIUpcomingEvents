@@ -15,7 +15,7 @@ extension MyEvent {
     }
     @NSManaged public var name: String
     @NSManaged public var color: UIColor
-    @NSManaged public var conflicts: NSSet?
+    //@NSManaged public var conflicts: NSSet?
 }
 
 extension MyEvent: Identifiable {

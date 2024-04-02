@@ -12,6 +12,7 @@ struct UpcomingEventsMHApp: App {
     var body: some Scene {
         WindowGroup {
             UpcomingEventsView()
+//                .environment(\.managedObjectContext, CoreDataProvider.shared.persistentContainer.viewContext)
         }
     }
 }
